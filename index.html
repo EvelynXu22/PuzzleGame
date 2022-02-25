@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Lines and Dots Puzzle Game</title>
+  <meta charset="utg-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body id="puzzle-game" class="puzzle-game">
+  <canvas class="background"></canvas>
+  <div class="bg-img">
+    <img src="./img/1left.png" class="left">
+    <img src="./img/4bottombg.png" class="center">
+    <img src="./img/1right.png" class="right">
+  </div>
+
+  <canvas class="grid"></canvas>
+  <canvas class="bar"></canvas>
+  <canvas class="game-canvas"></canvas>
+
+  <div class="success-page">
+    <div>
+      <span>
+        Amazing!
+      </span>
+      <div class="level">
+        <div>
+          <canvas></canvas>
+        </div>
+      </div>
+      <div class="key">
+        <div class="map">
+          Back to map
+        </div>
+        <div class="try-again">
+          Try again
+        </div>
+        <div class="next">
+          Play next level
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<script type="module" src="./js/puzzlegame.js"></script>
+
+</html>

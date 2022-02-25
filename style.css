@@ -1,0 +1,115 @@
+#puzzle-game{
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#puzzle-game a{
+  text-decoration: none;
+}
+
+.puzzle-game .game-canvas,
+.puzzle-game .bar,
+.puzzle-game .grid,
+.puzzle-game .success-page,
+.puzzle-game .background{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.puzzle-game .background{
+  z-index: -1;
+}
+
+.puzzle-game .bg-img{
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  user-select: none;
+  z-index: 1;
+}
+
+.puzzle-game .bg-img .left,.puzzle-game .bg-img .right{
+  width: 300px;
+}
+
+.puzzle-game .bg-img .center{
+  position: absolute;
+  bottom: -170px;
+  z-index: -1;
+}
+
+
+.puzzle-game .success-page{
+  background-color: rgba(0,0,0,0.7);
+  user-select: none;
+  top:100%;
+  transition: 0.3s ease;
+  overflow: hidden
+}
+
+.puzzle-game .success-page>div{
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    font-family:"Trebuchet MS" ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.puzzle-game .success-page>div>span{
+  position: relative;
+  padding-top: 3%;
+  width: 100%;
+}
+
+.puzzle-game .success-page>div .level>div{
+  background-color: #FFFBE0;
+  border-radius: 50%;
+  border: 8px solid #FF9000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.puzzle-game .success-page .key{
+  width: 100%;
+}
+
+.puzzle-game .success-page .try-again,
+.puzzle-game .success-page .next,
+.puzzle-game .success-page .map
+{
+  position: relative;
+  background-color: #719BE0;
+  width: 100%;
+  padding:6% 0 6% 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.puzzle-game .success-page>div .next{
+  background-color: #71E096;
+}
+
+.puzzle-game .success-page>div .map{
+  background-color: lightgray;
+}
+
+
+
+

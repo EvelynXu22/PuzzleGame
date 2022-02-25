@@ -1,0 +1,140 @@
+#map{
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+.map .background,
+.map .map-canvas,
+.map .layer,
+.map .level-page
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  overflow:hidden;
+  z-index: 2;
+}
+.map .background{
+  z-index: -1;
+}
+
+
+.map .bg-img{
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  user-select: none;
+}
+
+.map .bg-img .left,.map .bg-img .right{
+  width: 300px;
+}
+.map .bg-img .center{
+  position: absolute;
+  bottom: -170px;
+  z-index: -1;
+}
+
+.map .map-canvas{
+  transition: transform .5s ease-out;
+}
+
+.map .head{
+  font: 35px "Trebuchet MS";
+  text-transform: lowercase;
+ 
+}
+
+.map .head h1:first-letter{
+text-transform: uppercase;
+}
+
+.map h1{
+  position: fixed;
+  top: 2%;
+  color:#fff;
+  user-select: none;
+  margin: 0;
+  box-sizing: border-box;
+  width: min-content;
+}
+
+.map .is-transition{
+  transition: transform .5s ease-in-out;
+}
+
+.map h1 div{
+  display: block;
+  height: 50px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.map .level-page{
+  background-color: rgba(0,0,0,0.7);
+  user-select: none;
+  top: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+  overflow: hidden
+}
+
+.map .level-page>div{
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    font-family:"Trebuchet MS" ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map .level-page>div .title{
+  display: block;
+  width: 100%;
+  padding-top: 6%;
+  text-transform: lowercase;
+}
+
+
+.map .level-page>div .title:first-letter{
+text-transform: uppercase;
+}
+
+
+.map .level-page>div .level{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 4%;
+}
+
+.map .level-page>div .level>div{
+  background-color: #FFFBE0;
+  border-radius: 50%;
+  border: 8px solid #FF9000;
+}
+
+
+.map .level-page>div .start
+{
+  background-color: #71E096;
+  width: 100%;
+  padding: 5%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.map .flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
